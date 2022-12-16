@@ -3,6 +3,99 @@
 <head>
     <link rel="stylesheet" href="./css/main.css">
     <title>บอกเล่า | guyssar</title>
+    <style>*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header-contianer{
+    height: 80vh;
+    background-color: #444;
+    border: red solid;
+
+}
+
+
+/*Footer*/
+footer{
+    position:relative;
+    background-color: #333;
+    overflow: hidden;
+    min-height: 25rem;
+}
+footer .footer{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.footer-1{
+    display: flex;
+    justify-content: center;
+}
+.footer-1 div{
+    padding: 0.6rem;
+    margin: 1rem;
+    align-items: center;
+    color: #fff;
+    background-color: #444;
+    border-radius: 6px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15),
+                0 2px 2px rgba(0,0,0,0.15),
+                0 4px 4px rgba(0,0,0,0.15),
+                0 8px 8px rgba(0,0,0,0.15);
+}
+.footer-2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.footer-2 p{
+
+    margin: 1rem;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15),
+                0 2px 2px rgba(0,0,0,0.15),
+                0 4px 4px rgba(0,0,0,0.15),
+                0 8px 8px rgba(0,0,0,0.15);
+}
+
+@media screen and (max-width: 980px) {
+    .footer-1{
+        display: block;
+
+        justify-content: center;
+    }
+    .footer-1 div{
+        display: flex;
+    }
+
+
+}
+@media screen and (max-width: 700px) {
+    .footer-1{
+        display: block;
+
+        justify-content: center;
+    }
+    .footer-2{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .footer-2 p{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15),
+                0 2px 2px rgba(0,0,0,0.15),
+                0 4px 4px rgba(0,0,0,0.15),
+                0 8px 8px rgba(0,0,0,0.15);
+    }
+
+}
+
+/*Footer*/
+
+
+</style>
 </head>
 <body>
     <header>
