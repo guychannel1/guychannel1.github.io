@@ -8,13 +8,71 @@
     margin: 0;
     box-sizing: border-box;
 }
-.header-contianer{
-    height: 80vh;
-    background-color: #444;
-    border: red solid;
+
+
+
+/*header*/
+.header-con {
+    padding: 1px;
+    background-color: #333;
 
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15),
+                0 2px 2px rgba(0,0,0,0.15),
+                0 4px 4px rgba(0,0,0,0.15),
+                0 8px 8px rgba(0,0,0,0.15);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #00bfff;
+    color: #000;
+    font-weight: bold;
+  }
+  ul.topnav li a:hover:not(.active) {background-color: #111;}
 
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.right {float: right;}
+  @media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+  }
+/*header*/
+
+/*body*/
+.body-contianer{
+    background-color: rgb(55, 55, 55);
+    height: 20vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.body-con{
+
+}
+/*body*/
 
 /*Footer*/
 footer{
@@ -65,13 +123,7 @@ footer .footer{
 
         justify-content: center;
     }
-    .footer-1 div{
-        display: flex;
-        box-shadow: 0 1px 1px rgba(0,0,0,0.15),
-                0 2px 2px rgba(0,0,0,0.15),
-                0 4px 4px rgba(0,0,0,0.15),
-                0 8px 8px rgba(0,0,0,0.15);
-    }
+    
 
 
 }
@@ -98,19 +150,45 @@ footer .footer{
 
 /*Footer*/
 
+
 </style>
 </head>
 <body>
+    <!--header-->
     <header>
         <div class="header-contianer">
             <div class="header-con">
-                <div class="header">Header</div>
+                <ul>
+                    <li><a class="active" href="/">guyssar</a></li>
+                  </ul>
             </div>
         </div>
     </header>
-    
+    <!--header-->
+
+    <!--body-->
+    <section>
+        <div class="body-contianer">
+            <div class="bodt-con">
+                <div class="banner">
+                    <div class="banner-con">
+                        <div class="banner-text">
+                            <h1>guyssar</h1>
+                        </div>
+                        <div class="banner-p"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--body-->
+
+
+    <!--Footer-->
     <section>
         <footer class="footer">
+            <br>
+            <p align="center" style="color: #fff;">website by guyssar</p>
             <div class="footer-1">
                 <div>
                     <h3 align="left">Connect :</h3>
@@ -134,8 +212,6 @@ footer .footer{
                         <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> 
                         <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
                         <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> 
-                        <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> 
-                        <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> 
                     </p>
                 </div>
 
@@ -150,8 +226,7 @@ footer .footer{
                         <a href="https://laravel.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain-wordmark.svg" alt="laravel" width="40" height="40"/> </a> 
                         <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> 
                         <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> 
-                        <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a> 
-                        <a href="https://unrealengine.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg" alt="unreal" width="40" height="40"/> </a> 
+
                     </p>
                 </div>
             </div>
