@@ -2,155 +2,9 @@
 <html>
 <head>
     <title>บอกเล่า | guyssar</title>
-    <style>*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
-
-/*header*/
-.header-con {
-    padding: 1px;
-    background-color: #333;
-
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.15),
-                0 2px 2px rgba(0,0,0,0.15),
-                0 4px 4px rgba(0,0,0,0.15),
-                0 8px 8px rgba(0,0,0,0.15);
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: #111;
-  }
-  
-  .active {
-    background-color: #00bfff;
-    color: #000;
-    font-weight: bold;
-  }
-  ul.topnav li a:hover:not(.active) {background-color: #111;}
-
-ul.topnav li a.active {background-color: #04AA6D;}
-
-ul.topnav li.right {float: right;}
-  @media screen and (max-width: 600px) {
-    ul.topnav li.right, 
-    ul.topnav li {float: none;}
-  }
-/*header*/
-
-/*body*/
-.body-contianer{
-    background-color: rgb(55, 55, 55);
-    height: 20vh;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-.body-con{
-
-}
-/*body*/
-
-/*Footer*/
-footer{
-    position:relative;
-    background-color: #333;
-    overflow: hidden;
-    min-height: 25rem;
-}
-footer .footer{
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-.footer-1{
-    display: flex;
-    justify-content: center;
-}
-.footer-1 div{
-    padding: 0.6rem;
-    margin: 1rem;
-    align-items: center;
-    color: #fff;
-    background-color: #444;
-    border-radius: 6px;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.15),
-                0 2px 2px rgba(0,0,0,0.15),
-                0 4px 4px rgba(0,0,0,0.15),
-                0 8px 8px rgba(0,0,0,0.15);
-}
-.footer-2{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-.footer-2 p{
-
-    margin: 1rem;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.15),
-                0 2px 2px rgba(0,0,0,0.15),
-                0 4px 4px rgba(0,0,0,0.15),
-                0 8px 8px rgba(0,0,0,0.15);
-}
-
-@media screen and (max-width: 980px) {
-    .footer-1{
-        display: block;
-
-        justify-content: center;
-    }
-    
-
-
-}
-@media screen and (max-width: 700px) {
-    .footer-1{
-        display: block;
-
-        justify-content: center;
-    }
-    .footer-2{
-        display: block;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-    }
-    .footer-2 p{
-    box-shadow: 0 1px 1px rgba(0,0,0,0.15),
-                0 2px 2px rgba(0,0,0,0.15),
-                0 4px 4px rgba(0,0,0,0.15),
-                0 8px 8px rgba(0,0,0,0.15);
-    }
-
-}
-
-/*Footer*/
-
-
-</style>
+    <style>
+    *{padding: 0;margin: 0;box-sizing: border-box;}.header-con {padding: 1px;background-color: #333;}ul {list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color: #333;box-shadow: 0 1px 1px rgba(0,0,0,0.15),0 2px 2px rgba(0,0,0,0.15),0 4px 4px rgba(0,0,0,0.15),0 8px 8px rgba(0,0,0,0.15);}li {float: left;}li a {display: block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;}li a:hover:not(.active) {background-color: #111;}.active {background-color: #00bfff;color: #000;font-weight: bold;}ul.topnav li a:hover:not(.active) {background-color: #111;}ul.topnav li a.active {background-color: #04AA6D;}ul.topnav li.right {float: right;}@media screen and (max-width: 600px) {ul.topnav li.right, ul.topnav li {float: none;}}.body-contianer{background-color: rgb(55, 55, 55);text-align: center;justify-content: center;align-items: center;}.body-con{padding: 2rem;}.banner{margin: 3rem;height: 20vh;border: white solid;border-radius: 10px;box-shadow: 0 1px 1px rgba(0,0,0,0.15),0 2px 2px rgba(0,0,0,0.15),0 4px 4px rgba(0,0,0,0.15),0 8px 8px rgba(0,0,0,0.15);background-image: linear-gradient(-30deg, rgb(185, 185, 185), rgb(32, 32, 32)); }footer{position:relative;background-color: #333;overflow: hidden;min-height: 25rem;}footer .footer{justify-content: center;text-align: center;align-items: center;}.footer-1{display: flex;justify-content: center;   }.footer-row{padding: 0.6rem;margin: 1rem;align-items: center;color: #fff;background-color: #444;border-radius: 6px;border: white solid;box-shadow: 0 1px 1px rgba(0,0,0,0.15),0 2px 2px rgba(0,0,0,0.15),0 4px 4px rgba(0,0,0,0.15),0 8px 8px rgba(0,0,0,0.15);}.footer-2{display: flex;justify-content: center;text-align: center;align-items: center;}.footer-2 p{margin: 1rem;box-shadow: 0 1px 1px rgba(0,0,0,0.15),0 2px 2px rgba(0,0,0,0.15),0 4px 4px rgba(0,0,0,0.15),0 8px 8px rgba(0,0,0,0.15);}@media screen and (max-width: 980px) {.footer-1{display: block;justify-content: center;}.footer-row{display:flex;}}@media screen and (max-width: 700px) {.footer-1{display: block;justify-content: center;}.footer-2{display: block;justify-content: center;text-align: center;align-items: center;}.footer-row{display:flex;}footer-2 p{box-shadow: 0 1px 1px rgba(0,0,0,0.15),0 2px 2px rgba(0,0,0,0.15),0 4px 4px rgba(0,0,0,0.15),0 8px 8px rgba(0,0,0,0.15);}}
+    </style>
 </head>
 <body>
     <!--header-->
@@ -168,11 +22,38 @@ footer .footer{
     <!--body-->
     <section>
         <div class="body-contianer">
-            <div class="bodt-con">
+            <div class="body-con">
                 <div class="banner">
                     <div class="banner-con">
                         <div class="banner-text">
-                            <h1>guyssar</h1>
+                          
+                        </div>
+                        <div class="banner-p"></div>
+                    </div>
+                </div>
+
+                <div class="banner">
+                    <div class="banner-con">
+                        <div class="banner-text">
+                          
+                        </div>
+                        <div class="banner-p"></div>
+                    </div>
+                </div>
+
+                <div class="banner">
+                    <div class="banner-con">
+                        <div class="banner-text">
+                          
+                        </div>
+                        <div class="banner-p"></div>
+                    </div>
+                </div>
+
+                <div class="banner">
+                    <div class="banner-con">
+                        <div class="banner-text">
+                          
                         </div>
                         <div class="banner-p"></div>
                     </div>
@@ -189,14 +70,14 @@ footer .footer{
             <br>
             <p align="center" style="color: #fff;">website by guyssar</p>
             <div class="footer-1">
-                <div>
+                <div class="footer-row">
                     <h3 align="left">Connect :</h3>
                     <p align="left">
                     <a href="https://www.facebook.com/launchpad.nameguys.5/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="launchpad nameguys" height="30" width="40" /></a>
                     </p>
                 </div>
                 
-                <div>
+                <div class="footer-row">
                     <h3 align="left">Languages :</h3>
                     <p align="left"> 
                         <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> 
@@ -214,7 +95,7 @@ footer .footer{
                     </p>
                 </div>
 
-                <div>
+                <div class="footer-row">
                     <h3 align="left">Tools:</h3>
                     <p align="left"> 
                         <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> 
