@@ -4,7 +4,6 @@
         "ucode":"38600",
         "fname":"ธีรชาติ",
         "lname":"กัสปะ"
-	
     },
 	{
         "number":"2",
@@ -58,8 +57,7 @@
         "number":"10",
         "ucode":"38810",
         "fname":"ชัชพิสิฐ",
-        "lname":"ชาสมบัติ",
-	"video":"https://guychannel1.github.io/kw6-1%202565/VID20230123091156.mp4"
+        "lname":"ชาสมบัติ"
     },
 	{
         "number":"11",
@@ -82,188 +80,188 @@
 		{
         "number":"14",
         "ucode":"38906",
-        "fname":"",
-        "lname":""
+        "fname":"นัฐวิทย์ ",
+        "lname":"พานโน"
     },
 		{
         "number":"15",
         "ucode":"38910",
-        "fname":"",
-        "lname":""
+        "fname":"สรยุทธ",
+        "lname":"พนมวัฒนคุณ"
     },
 		{
         "number":"16",
         "ucode":"39060",
-        "fname":"7",
-        "lname":""
+        "fname":"วรกานต์",
+        "lname":"ลาม่วง"
     },
 		{
         "number":"17",
         "ucode":"39061",
-        "fname":"",
-        "lname":""
+        "fname":"พุฒิธร",
+        "lname":"สังข์โสม"
     },
 		{
         "number":"18",
         "ucode":"39069",
-        "fname":"",
-        "lname":""
+        "fname":"ณัชพล",
+        "lname":"พุตเเก้ว"
     },
 		{
         "number":"19",
         "ucode":"39073",
-        "fname":"",
-        "lname":""
+        "fname":"ชาตโยดม",
+        "lname":"จิธรชานนท์"
     },
 		{
         "number":"20",
         "ucode":"41552",
-        "fname":"",
-        "lname":""
+        "fname":"ธนวิชญ์",
+        "lname":"คำลือ"
     },
 		{
         "number":"21",
         "ucode":"41553",
-        "fname":"",
-        "lname":""
+        "fname":"ปารมินทร์",
+        "lname":"เเนวพิลา"
     },
 		{
         "number":"22",
         "ucode":"41554",
-        "fname":"",
-        "lname":""
+        "fname":"พุทธรักษ์",
+        "lname":"สาระฆัง"
     },
 		{
         "number":"23",
         "ucode":"41555",
-        "fname":"",
-        "lname":""
+        "fname":"ศิวกร",
+        "lname":"ดีไลย์"
     },
 		{
         "number":"24",
-        "ucode":"",
-        "fname":"",
-        "lname":""
+        "ucode":"38687",
+        "fname":"ประภาพร",
+        "lname":"ถนอมเเนว"
     },
 	
     {
         "number":"25",
-        "ucode":"",
-        "fname":"",
-        "lname":""
+        "ucode":"38764",
+        "fname":"ผริตา",
+        "lname":"ปัตเตย์"
     },
 	{
         "number":"26",
-        "ucode":"",
-        "fname":"",
-        "lname":""
+        "ucode":"38766",
+        "fname":"กวัณลักษณ์",
+        "lname":"ธัญชนัชพรกุล"
     },
     {
         "number":"27",
-        "ucode":"",
-        "fname":"",
-        "lname":""
+        "ucode":"38869",
+        "fname":"อนุธิดา",
+        "lname":"อาจจำปา"
     },
 	{
         "number":"28",
-        "ucode":"",
-        "fname":"",
-        "lname":""
+        "ucode":"38885",
+        "fname":"ศศิพร",
+        "lname":"เเพงงา"
     },
 	{
         "number":"29",
-        "ucode":"",
-        "fname":"",
-        "lname":""
+        "ucode":"38897",
+        "fname":"ณัฐธิดา",
+        "lname":"ทองเต็ม"
     },
 	{
         "number":"30",
-        "ucode":"",
-        "fname":"",
-        "lname":""
+        "ucode":"38935",
+        "fname":"นวรัตน์",
+        "lname":"รักชาติไทย"
     },
 	{
         "number":"31",
-        "ucode":"",
-        "fname":"",
-        "lname":""
+        "ucode":"39080",
+        "fname":"กัญญาวีร์",
+        "lname":"ทะวิชัย"
     },
 	{
         "number":"32",
-        "ucode":"",
-        "fname":"",
-        "lname":""
+        "ucode":"40940",
+        "fname":"กฤตพร",
+        "lname":"จันทร์นาฝาย"
     },
 	{
         "number":"33",
-        "ucode":"",
-        "fname":"",
-        "lname":""
+        "ucode":"41556",
+        "fname":"กฤติกา",
+        "lname":"โคตรบุรี"
     },
 	{
         "number":"34",
-        "ucode":"",
-        "fname":"",
-        "lname":""
+        "ucode":"41557",
+        "fname":"จิรภิญญา",
+        "lname":"หล้าดวงดี"
     },
 	{
         "number":"35",
-        "ucode":"",
-        "fname":"",
-        "lname":""
+        "ucode":"41558",
+        "fname":"ชลธิดา",
+        "lname":"เเตนหนองฮี"
     },
 	{
         "number":"36",
-        "ucode":"",
-        "fname":"",
-        "lname":""
+        "ucode":"41559",
+        "fname":"ชลลธิดา",
+        "lname":"ผิวผ่อง"
     },
 	{
         "number":"37",
-        "ucode":"",
-        "fname":"",
-        "lname":""
+        "ucode":"41560",
+        "fname":"ปัณณทัต",
+        "lname":"สุทธิประภา"
     },
 		{
         "number":"38",
-        "ucode":"",
-        "fname":"",
-        "lname":""
+        "ucode":"41561",
+        "fname":"พรรณชนก",
+        "lname":"ร่มไทร"
     },
 		{
         "number":"39",
-        "ucode":"",
-        "fname":"",
-        "lname":""
+        "ucode":"41562",
+        "fname":"พิมพ์นารา",
+        "lname":"จันชานิธิสกุล"
     },
 		{
         "number":"40",
-        "ucode":"",
-        "fname":"",
-        "lname":""
+        "ucode":"41563",
+        "fname":"เพชรลดา",
+        "lname":"สาทะวงค์"
     },
 		{
         "number":"41",
-        "ucode":"",
-        "fname":"",
-        "lname":""
+        "ucode":"41564",
+        "fname":"เพ็ญพิชชา่",
+        "lname":"ศรีราช"
     },
 		{
         "number":"42",
-        "ucode":"",
-        "fname":"",
-        "lname":""
+        "ucode":"41565",
+        "fname":"เเพรไหม",
+        "lname":"มะโนธรรม"
     },
 		{
         "number":"43",
-        "ucode":"",
-        "fname":"",
-        "lname":""
+        "ucode":"41566",
+        "fname":"มนท์กานต์",
+        "lname":"เเสงสูข"
     },
 		{
         "number":"44",
-        "ucode":"",
-        "fname":"",
-        "lname":""
+        "ucode":"41567",
+        "fname":"รพีพรรณ",
+        "lname":"ดียา"
     }
 ]
