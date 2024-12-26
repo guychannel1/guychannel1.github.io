@@ -14,6 +14,17 @@
       text-align: center;
       color: #333;
     }
+    .search-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .search-container input {
+      width: 80%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
     .card {
       border: 2px solid #ccc;
       border-radius: 10px;
@@ -30,38 +41,68 @@
       margin-top: 10px;
       color: #555;
     }
+    .no-results {
+      text-align: center;
+      color: #999;
+      font-size: 18px;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
   <h1>คำถามที่ถามบ่อย</h1>
+  <div class="search-container">
+    <input type="text" id="search" placeholder="ค้นหาคำถาม..." oninput="filterQuestions()">
+  </div>
   <div id="content"></div>
 
   <script>
+    let questionsData = [];
 
     fetch('data.json')
       .then(response => response.json())
       .then(data => {
-        const contentDiv = document.getElementById('content');
-        data.forEach(item => {
-
-          const cardEl = document.createElement('div');
-          cardEl.className = 'card';
-
-          const questionEl = document.createElement('div');
-          questionEl.className = 'question';
-          questionEl.textContent = `Q: ${item.textq}`;
-
-          const answerEl = document.createElement('div');
-          answerEl.className = 'answer';
-          answerEl.textContent = `A: ${item.texta}`;
-
-          cardEl.appendChild(questionEl);
-          cardEl.appendChild(answerEl);
-
-          contentDiv.appendChild(cardEl);
-        });
+        questionsData = data;
+        displayQuestions(data);
       })
       .catch(error => console.error('เกิดข้อผิดพลาดในการดึงข้อมูล:', error));
+
+    function displayQuestions(data) {
+      const contentDiv = document.getElementById('content');
+      contentDiv.innerHTML = ''; 
+
+      if (data.length === 0) {
+        contentDiv.innerHTML = '<div class="no-results">ไม่พบคำถามที่ตรงกับการค้นหา</div>';
+        return;
+      }
+
+      data.forEach(item => {
+        const cardEl = document.createElement('div');
+        cardEl.className = 'card';
+
+        const questionEl = document.createElement('div');
+        questionEl.className = 'question';
+        questionEl.textContent = `Q: ${item.textq}`;
+
+        const answerEl = document.createElement('div');
+        answerEl.className = 'answer';
+        answerEl.textContent = `A: ${item.texta}`;
+
+        cardEl.appendChild(questionEl);
+        cardEl.appendChild(answerEl);
+        contentDiv.appendChild(cardEl);
+      });
+    }
+
+
+    function filterQuestions() {
+      const searchTerm = document.getElementById('search').value.toLowerCase();
+      const filteredData = questionsData.filter(item =>
+        item.textq.toLowerCase().includes(searchTerm) ||
+        item.texta.toLowerCase().includes(searchTerm)
+      );
+      displayQuestions(filteredData);
+    }
   </script>
 </body>
 </html>
