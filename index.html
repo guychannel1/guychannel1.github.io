@@ -6,9 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QA Buddyfight</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      padding: 20px;
       background-color: #f9f9f9;
     }
 
@@ -55,15 +60,41 @@
       font-size: 18px;
       margin-top: 20px;
     }
+
+    .discord {
+      text-decoration: none;
+      color: white;
+      display: flex;
+      align-items: center;
+      transition: ease 0.5s;
+    }
+    .discord:hover{
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      display: flex;
+      align-items: center;
+      transition: ease 0.5s;
+    }
   </style>
 </head>
 
 <body>
-  <h1>คำถามที่ถามบ่อย</h1>
-  <div class="search-container">
-    <input type="text" id="search" placeholder="ค้นหาคำถาม..." oninput="filterQuestions()">
+  <header
+    style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background-color: #007BFF; color: white;">
+    <h1 style="margin: 0;"></h1>
+    <a class="discord" href="https://discord.gg/Qf32jyTjpk" target="_blank">
+      <img src="https://cdn.icon-icons.com/icons2/2108/PNG/512/discord_icon_130958.png" alt="Discord"
+        style="width: 30px; height: 30px; margin-right: 10px;">
+      เข้าร่วม Discord
+    </a>
+  </header>
+  <div style="padding: 20px;">
+    <h1>คำถามที่ถามบ่อย</h1>
+    <div class="search-container">
+      <input type="text" id="search" placeholder="ค้นหาคำถาม..." oninput="filterQuestions()">
+    </div>
+    <div id="content"></div>
   </div>
-  <div id="content"></div>
 
   <script>
     let questionsData = [];
