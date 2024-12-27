@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,17 @@
       padding: 20px;
       background-color: #f9f9f9;
     }
+
     h1 {
       text-align: center;
       color: #333;
     }
+
     .search-container {
       text-align: center;
       margin-bottom: 20px;
     }
+
     .search-container input {
       width: 80%;
       padding: 10px;
@@ -25,6 +29,7 @@
       border-radius: 5px;
       font-size: 16px;
     }
+
     .card {
       border: 2px solid #ccc;
       border-radius: 10px;
@@ -33,14 +38,17 @@
       background-color: #fff;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
+
     .question {
       font-weight: bold;
       color: #007BFF;
     }
+
     .answer {
       margin-top: 10px;
       color: #555;
     }
+
     .no-results {
       text-align: center;
       color: #999;
@@ -49,6 +57,7 @@
     }
   </style>
 </head>
+
 <body>
   <h1>คำถามที่ถามบ่อย</h1>
   <div class="search-container">
@@ -67,6 +76,7 @@
       })
       .catch(error => console.error('เกิดข้อผิดพลาดในการดึงข้อมูล:', error));
 
+    // แสดงข้อมูลในหน้าเว็บ
     function displayQuestions(data) {
       const contentDiv = document.getElementById('content');
       contentDiv.innerHTML = ''; 
@@ -80,6 +90,10 @@
         const cardEl = document.createElement('div');
         cardEl.className = 'card';
 
+        const qaEl = document.createElement('div');
+        qaEl.className = 'qa';
+        qaEl.textContent = `[QA${item.textqa}]`; 
+
         const questionEl = document.createElement('div');
         questionEl.className = 'question';
         questionEl.textContent = `Q: ${item.textq}`;
@@ -88,21 +102,26 @@
         answerEl.className = 'answer';
         answerEl.textContent = `A: ${item.texta}`;
 
+        cardEl.appendChild(qaEl);
         cardEl.appendChild(questionEl);
         cardEl.appendChild(answerEl);
         contentDiv.appendChild(cardEl);
       });
     }
 
-
+    // แสดงข้อมูลค้นหา
     function filterQuestions() {
-      const searchTerm = document.getElementById('search').value.toLowerCase();
-      const filteredData = questionsData.filter(item =>
-        item.textq.toLowerCase().includes(searchTerm) ||
-        item.texta.toLowerCase().includes(searchTerm)
-      );
-      displayQuestions(filteredData);
-    }
+  const searchTerm = document.getElementById('search').value.toLowerCase();
+  const filteredData = questionsData.filter(item =>
+    (item.textq && item.textq.toLowerCase().includes(searchTerm)) ||
+    (item.texta && item.texta.toLowerCase().includes(searchTerm)) ||
+    (item.textqa && `[QA${item.textqa}]`.toLowerCase().includes(searchTerm))
+  );
+  displayQuestions(filteredData);
+}
+
+
   </script>
 </body>
+
 </html>
