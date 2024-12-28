@@ -75,13 +75,16 @@
       align-items: center;
       transition: ease 0.5s;
     }
+    #count{
+      font-size: medium;
+    }
   </style>
 </head>
 
 <body>
   <header
     style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background-color: #007BFF; color: white;">
-    <h1 style="margin: 0;"></h1>
+    <h1 id="count"></h1>
     <a class="discord" href="https://discord.gg/Qf32jyTjpk" target="_blank">
       <img src="https://cdn.icon-icons.com/icons2/2108/PNG/512/discord_icon_130958.png" alt="Discord"
         style="width: 30px; height: 30px; margin-right: 10px;">
@@ -99,11 +102,18 @@
   <script>
     let questionsData = [];
 
+    // แสดงข้อมูลจำนวน
+      function updateQuestionCount() {
+    const countEl = document.getElementById('count');
+    countEl.textContent = `จำนวนคำถาม: ${questionsData.length}`;
+  }
+
     fetch('data.json')
       .then(response => response.json())
       .then(data => {
         questionsData = data;
         displayQuestions(data);
+        updateQuestionCount();
       })
       .catch(error => console.error('เกิดข้อผิดพลาดในการดึงข้อมูล:', error));
 
