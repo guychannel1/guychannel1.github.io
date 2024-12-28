@@ -99,7 +99,7 @@
   <script>
     let questionsData = [];
 
-    fetch('https://cors-anywhere.herokuapp.com/https://pastebin.com/raw/rvGfQhU3')
+    fetch('data.json')
       .then(response => response.json())
       .then(data => {
         questionsData = data;
@@ -110,7 +110,7 @@
     // แสดงข้อมูลในหน้าเว็บ
     function displayQuestions(data) {
       const contentDiv = document.getElementById('content');
-      contentDiv.innerHTML = '';
+      contentDiv.innerHTML = ''; 
 
       if (data.length === 0) {
         contentDiv.innerHTML = '<div class="no-results">ไม่พบคำถามที่ตรงกับการค้นหา</div>';
@@ -123,7 +123,7 @@
 
         const qaEl = document.createElement('div');
         qaEl.className = 'qa';
-        qaEl.textContent = `[QA${item.textqa}]`;
+        qaEl.textContent = `[QA${item.textqa}]`; 
 
         const questionEl = document.createElement('div');
         questionEl.className = 'question';
@@ -142,14 +142,16 @@
 
     // แสดงข้อมูลค้นหา
     function filterQuestions() {
-      const searchTerm = document.getElementById('search').value.toLowerCase();
-      const filteredData = questionsData.filter(item =>
-        (item.textq && item.textq.toLowerCase().includes(searchTerm)) ||
-        (item.texta && item.texta.toLowerCase().includes(searchTerm)) ||
-        (item.textqa && `[QA${item.textqa}]`.toLowerCase().includes(searchTerm))
-      );
-      displayQuestions(filteredData);
-    }
+  const searchTerm = document.getElementById('search').value.toLowerCase();
+  const filteredData = questionsData.filter(item =>
+    (item.textq && item.textq.toLowerCase().includes(searchTerm)) ||
+    (item.texta && item.texta.toLowerCase().includes(searchTerm)) ||
+    (item.textqa && `[QA${item.textqa}]`.toLowerCase().includes(searchTerm))
+  );
+  displayQuestions(filteredData);
+}
+
+
   </script>
 </body>
 
